@@ -1,4 +1,4 @@
-# Project Name: Code Summarization with Transformer-based Models
+# Code Summarization with Transformer-based Models
 ## Introduction
 This project aims to summarize code snippets using transformer-based models. The task involves generating descriptive summaries for given code snippets, which can be beneficial for code documentation and understanding. We leverage state-of-the-art transformer architectures and fine-tune them on a dataset containing code snippets along with corresponding docstrings.
 
@@ -53,8 +53,8 @@ Arguments for inference:
 - **--repetition_penalty**: Penalty for repeating tokens during generation (default: 1).
 Example command:
 
-````bash
-python inference.py --checkpoint_path opt-125m-fine-tuned/peft-model --input_code_file ./data/input.txt
+````
+python inference.py --checkpoint_path opt-125m-fine-tuned/peft-model \--input_code_file ./data/input.txt
 
 </s>Describe what the following code does:
 ```Python
@@ -78,7 +78,7 @@ Instead of fine-tuning transformer-based models primarily pre-trained on text co
 Augmenting the dataset with diverse code snippets and corresponding docstrings can improve the model\'s ability to generalize across different coding styles, languages, and domains. Techniques such as paraphrasing, code transformation, and code synthesis can be employed to generate additional training examples, thereby enhancing the model\'s robustness.
 
 ## References
-[OPT: Open Pre-trained Transformer Language Models](https://arxiv.org/abs/2205.01068)
+[OPT: Open Pre-trained Transformer Language Models](https://arxiv.org/abs/2205.01068)\
 [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
 
 ## Contributors

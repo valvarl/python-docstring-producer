@@ -15,7 +15,7 @@ if __name__ == '__main__':
     # ----------
     parser = argparse.ArgumentParser(usage=argparse.SUPPRESS)
     parser.add_argument('--model_name_or_path', type=str,
-                       default='facebook/opt-350m')
+                       default='facebook/opt-125m')
     parser.add_argument('--preprocessing_num_workers', type=int, default=4)
     parser.add_argument('--max_seq_lenghth', type=int, default=128)
     parser.add_argument('--train_barch_size', type=int, default=32)
